@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include <graphics.h>
 #include <conio.h>
 
@@ -19,7 +18,7 @@ while(!kbhit()){
     settextstyle(random(font),random(direction),random(size));
     setcolor(random(color));
     delay(300);
-    if(count==10) // random background after 10 updates
+    if(count%10==0) // random background after 10 updates
     {
     setbkcolor(random(color));
     }
